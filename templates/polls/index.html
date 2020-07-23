@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Formulario</h1>
+  <form id="form" action="/save/" method="post">
+    {% csrf_token %}
+    <input name="first_name" id="texto" type="text" placeholder="ingrese nombre">
+    <input name="last_name" id="texto" type="text" placeholder="ingrese apellido">
+    <input type="submit" value="Enviar">
+  </form>
+  <script>
+    const form = document.querySelector('#form');
+  </script>
+</body>
+</html>
